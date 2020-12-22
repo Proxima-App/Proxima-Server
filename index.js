@@ -14,13 +14,13 @@ var api = new ParseServer({
   masterKey: process.env.MASTER_KEY,
   clientKey: process.env.CLIENT_KEY,
   serverURL: process.env.SERVER_URL,
+  publicServerURL : process.env.SERVER_URL,
 });
 
 const dashboard = new ParseDashboard( {
   'apps': [
     {
       'serverURL': process.env.SERVER_URL,
-      'publicServerURL' : process.env.SERVER_URL,
       'appName': process.env.APP_NAME,
       'appId': process.env.APP_ID,
       'masterKey': process.env.MASTER_KEY
