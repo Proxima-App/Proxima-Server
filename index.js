@@ -15,6 +15,11 @@ var api = new ParseServer({
   clientKey: process.env.CLIENT_KEY,
   serverURL: process.env.SERVER_URL,
   publicServerURL : process.env.SERVER_URL,
+  auth: {
+    apple: {
+    },
+  }
+  
 });
 
 const dashboard = new ParseDashboard( {
